@@ -108,7 +108,7 @@ console.log(`Time Elapsed for second function: ${(t4 - t3) / 1000} seconds`);
     Shorthands:
         i. Arithmetic operations are constant
         ii. Variable assignment is constant
-        iii. Accessing elements in an array is cnstant
+        iii. Accessing elements in an array is constant
         iv. In a loop, the complexity is the length of the loop times the complexity
             f whatever happens inside of the loop
 
