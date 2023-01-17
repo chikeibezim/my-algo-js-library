@@ -36,7 +36,7 @@
 
     3. Break it down:
         *Explicitly write out the steps you want to take and communicate with the interviewer or colleague
-        *These steps can be written as comments in your code explaining the step by step process tou will take in solving the problem
+        *These steps can be written as comments in your code explaining the step by step process you will take in solving the problem
 
     4. Solve or Simplify:
         If you can't solve the problem, then simplify the problem and solve it the way you can
