@@ -66,6 +66,18 @@
             frequencyCounter2[val] = (frequencyCounter2[val] || 0) + 1
         }
 
-        //loop over any of the two arrays and 
+        //loop over the first object
+        for(let key in frequencyCounter1){
+            //check if the square of key in first object is a key in the second object
+            if(!(key ** 2 in frequencyCounter2)){
+                return false;
+            }
+            //check if the frequency of the squared of each key in frequencyConter2 is 
+            //same as the frequency in frequencyConter1
+            if(frequencyCounter2[key ** 2] !== frequencyCounter1[key]){
+                return false;
+            }
+        }
+        return true;
         
     }
