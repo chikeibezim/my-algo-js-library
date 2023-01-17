@@ -13,10 +13,59 @@
  */
 
     //the function will take in two arrays
-    
+    //below will be the naive approach which takes a time complexity of 0(n^2)
+    //because its a nested for loop
+
     function same(arr1, arr2){
-        
+        //check if the two arrays are the same length
+        if(arr1.length != arr2.length){
+            return false;
+        }
+
+        //loop through the first array
+        for(let i = 0; i < arr1.length; i++){
+            //get the index of the square of each value
+            let correctIndex = arr2.indexOf(arr1[i] ** 2); //indexof is a forloop
+
+            //check if there's a valid index
+            if(correctIndex === -1){
+                return false
+            }
+            //else, if index exists, remove the index from the array
+            arr2.splice(correctIndex,1);
+        }
+        return true;
 
     }
 
-    same([2,5,5],[4,25,25])
+    same([2,5,5],[4,25,25]);
+
+    //using frequency counter, instead of the first
+    //we can loop over each array once time individually
+    //two seperate loops is better than two nested loops O(n)
+    //here we use an object
+    //each one will count the frequency of individual values in the arrays
+    
+
+    function same1(arr1, arr2){
+        //check to see if array lengths are the same
+        if(arr1.length !== arr2.length){
+            return false;
+        }
+
+        //create objects to store frequency
+        let frequencyCounter1 = {};
+        let frequencyCounter2 = {};
+
+        //loop over the values in the array and insert the frequency into the object
+        for(let val of arr1){
+            frequencyCounter1[val] = (frequencyCounter1[val] || 0) + 1; //check if key exists in object
+        }
+
+        for(let val of arr2){
+            frequencyCounter2[val] = (frequencyCounter2[val] || 0) + 1
+        }
+
+        //loop over any of the two arrays and 
+        
+    }
