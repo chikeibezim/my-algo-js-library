@@ -59,7 +59,7 @@ function solveAnagram(string1, string2){
     console.log(dict)
     //loop through the second string and check for occurrence
     for(let word of string2){
-        //check if the word exist in the object
+        //check if the word exist in the object if it's zero or non-existent
         if(!dict[word]){
             return false
         }else{
