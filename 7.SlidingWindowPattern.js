@@ -8,9 +8,9 @@
     Very useful for keeping track of a subset of data in an array/string e.t.c
 
     An Example:
-    Write a funnction called maxSubarraySum which accepts an arrau of integers and a 
-    numver called n. the function should calculate the maximum sum of n consecutive
-    elements in te array.
+    Write a funnction called maxSubarraySum which accepts an array of integers and a 
+    number called n. the function should calculate the maximum sum of n consecutive
+    elements in the array.
 */
 
 //naive solution
