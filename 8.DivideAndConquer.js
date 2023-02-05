@@ -43,3 +43,22 @@ function search(arr, val){
 
     return -1;
 }
+
+function areThereDuplicates(...values) {
+    let arr = values;
+   //create two pointers
+   let pointer1 = 0;
+   let pointer2 = pointer1 + 1;
+   //loop through the first and compare with the next
+   for(let i = 0; i < arr.length; i++){
+       if(arr[i] === arr[pointer2]){
+           return true;
+       }
+       
+       pointer2++;
+   }
+   //if the same, return true
+   return false
+}
+
+console.log(areThereDuplicates('a', 'b', 'c', 'a'))
